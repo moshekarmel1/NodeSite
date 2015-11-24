@@ -46,3 +46,20 @@
   top: 0;
   left: 0;
 }
+
+.projects{
+  padding-top: 40px; 
+  background: #532F8C;
+  color: white;
+  padding-bottom: 80px; 
+}
+
+.pad{
+ padding-bottom: 40px; 
+}
+
+.black{
+  background-color: #000;
+  color: #FFF;
+  border: none;
+}
