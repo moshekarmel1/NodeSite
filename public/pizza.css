@@ -140,12 +140,14 @@ and (max-width : 750px) {
 
 @media only screen and (min-width : 300px) and (max-width : 389px) {
   .comment { max-width: 270px; overflow: hidden }
+  .comment { font-family:Verdana, Geneva, sans-serif; font-size:  9pt; }
   .img { max-width: 100px;}
   .comhead { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
   .yclinks { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
 }
 @media only screen and (min-width : 390px) and (max-width : 509px) {
   .comment { max-width: 350px; overflow: hidden }
+  .comment { font-family:Verdana, Geneva, sans-serif; font-size:  9pt; }
   .img { max-width: 150px;}
   .comhead { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
   .yclinks { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
