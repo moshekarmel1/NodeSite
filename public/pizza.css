@@ -62,7 +62,7 @@ pre:hover { overflow:auto }
   height:     10px;
   border:     0px;
   margin:     3px 2px 6px;
-  background: url("grayarrow.gif")
+  background: url("img/grayarrow.gif")
   no-repeat;
 }
 
@@ -73,7 +73,7 @@ pre:hover { overflow:auto }
 table.padtab td { padding:0px 10px }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  .votearrow { background-size: 10px; background-image: url("grayarrow2x.gif"); }
+  .votearrow { background-size: 10px; background-image: url("img/grayarrow2x.gif"); }
 }
 
 .rotate180 {
@@ -141,10 +141,14 @@ and (max-width : 750px) {
 @media only screen and (min-width : 300px) and (max-width : 389px) {
   .comment { max-width: 270px; overflow: hidden }
   .img { max-width: 100px;}
+  .comhead { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
+  .yclinks { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
 }
 @media only screen and (min-width : 390px) and (max-width : 509px) {
   .comment { max-width: 350px; overflow: hidden }
   .img { max-width: 150px;}
+  .comhead { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
+  .yclinks { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
 }
 @media only screen and (min-width : 510px) and (max-width : 599px) {
   .comment { max-width: 460px; overflow: hidden }
