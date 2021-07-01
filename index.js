@@ -23,10 +23,10 @@ app.get('/career', function(req, res){
     res.sendFile(__dirname + '/public/career.html');
 });
 
-app.get('/skills', function(req, res){
-    res.sendFile(__dirname + '/public/skills.html');
+app.get('/show', function(req, res){
+    res.sendFile(__dirname + '/public/show.html');
 });
 
-app.get('/projects', function(req, res){
-    res.sendFile(__dirname + '/public/projects.html');
+app.get('/thoughts', function(req, res){
+    res.sendFile(__dirname + '/public/thoughts.html');
 });

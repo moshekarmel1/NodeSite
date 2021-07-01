@@ -1,0 +1,260 @@
+<html lang="en" op="news">
+
+<head>
+    <meta name="referrer" content="origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="rss">
+    <link rel="stylesheet" type="text/css" href="pizza.css" />
+    <title>Moshe Karmel</title>
+</head>
+
+<body>
+    <center>
+        <table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+            <tr>
+                <td bgcolor="#ff6600">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px;height: 40px;">
+                        <tr>
+                            <td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"></a></td>
+                            <td style="line-height:24pt; height:20px;"><span class="pagetop"><b class="hnname"><a
+                                            href="/">Moshe Karmel</a></b>
+                                    <a href="/">home</a> | <a href="career">career</a> | <a href="projects">projects</a>
+                                    | <a href="show">show</a> | <a href="thoughts">thoughts</a>
+                                </span></td>
+                            <td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                                    <a id="me" href="#">mkarmel</a> (613) |
+                                    <a id="logout" href="#">logout</a>
+                                </span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr id="pagespace" title="" style="height:20px"></tr>
+            <tr>
+                <td>
+                    <table border="0" class="comment-tree">
+                        <tbody>
+                            <tr class="athing comtr" id="27699124">
+                                <td>
+                                    <table border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="ind"><img src="img/s.gif" height="1" width="0"></td>
+                                                <td valign="top" class="votelinks">
+                                                    <center>&nbsp;</center>
+                                                </td>
+                                                <td class="default">
+                                                    <div style="margin-top:2px; margin-bottom:-10px;"><span
+                                                            class="comhead">
+                                                            <a href="https://rocketmortgage.com/" class="hnuser">Tech
+                                                                migration is hard, let's make it better</a>
+                                                            <span class="age" title="2021-07-01T14:01:30"><a
+                                                                    href="item?id=27699124"> - May 2018</a></span>
+                                                            <span id="unv_27699124"></span><span class="par"></span> <a
+                                                                class="togg" n="7" href="#">[–]</a> <span
+                                                                class="storyon"></span>
+                                                        </span></div><br>
+                                                    <div id="migration" class="comment">
+                                                        <span class="commtext c00">
+                                                            <h5>Some Background</h5>
+                                                            Here's a scenario that keeps playing out in the Technology
+                                                            landscape.
+                                                            <br/>
+                                                            Team A builds a new API that solves Problem X. Now that the
+                                                            API is built, we just need Team B, C, D, and E to migrate to
+                                                            the new API.
+                                                            <br/>
+                                                            But wait! Team C is running low on resources and really
+                                                            doesn't have time to do the migration.
+                                                            <br/>
+                                                            Hold On! Team D never accounted for the migration in their
+                                                            Quarterly Release Planning. The earliest they can fit it in
+                                                            is Q4 of next year.
+                                                            <br/>
+                                                            Wait! now you hear from Team Member Y that noone can go live
+                                                            with the new features until Team E re-architects their
+                                                            client-facing application and middleware.
+                                                            <br/>
+                                                            Meanwhile the benefits of the new API are just sitting there
+                                                            without anyone taking advantage of them.
+                                                            <br/>
+                                                            <h5>Classic Migration Patterns</h5>
+                                                            Let's talk through some of the options that we have.
+                                                            <br/>
+                                                            <h5>Number 1 - Let's all hold hands and jump in the pool</h5>
+                                                            This classic pattern (a.k.a. LAHHAJITP) is the most obvious,
+                                                            simplest, and riskiest.
+                                                            <br/>
+                                                            Basically on a specific date everyone simply migrates from
+                                                            API A to API B.
+                                                            <br/>
+                                                            <h6>Pros</h6>
+                                                            <ol>
+                                                                <li>No one uses the deprecated system after the cutover date.</li>
+                                                                <li>Benefits of the new system are live for everyone
+                                                                    immediately.</li>
+                                                                <li>Doesn't require the application to be architected in a
+                                                                    specific way.</li>
+                                                            </ol>
+                                                            <h6>Cons</h6>
+                                                            <ol>
+                                                                <li>A ton of coordination is needed to move the changes through
+                                                                all 3 environments smoothly. Case and point a recent API
+                                                                Gateway Upgrade. (Notice how the page has 281 edits spanning
+                                                                Sept 21st 2017 to Apr 12th 2018, 6 months to upgrade one
+                                                                detail!!)</li>
+                                                                <li>A ton of risk. Especially if there is any database migration
+                                                                    involved. If anything goes wrong there can be some extremely
+                                                                    painful rollbacks + TM's up all night. Case and point the
+                                                                    recent TSB fiasco.</li>
+                                                                <li>
+                                                                    If something not obvious is broken, it will be broken for
+                                                            everyone, e.g. no guinea pig / early adopters to weed out
+                                                            issues in Prod.
+                                                                </li> 
+                                                            </ol>
+                                                            <h5>Number 2 - Piece by Piece</h5>
+                                                            This pattern (a.k.a. Strangler Pattern) is a popular choice.
+                                                            <br/>
+                                                            Basically the old system and the new system live
+                                                            side-by-side and all consumers slowly migrate as they have
+                                                            bandwidth.
+                                                            <br/>
+                                                            <h6>Pros</h6>
+                                                            <ol>
+                                                                <li>Much safer, way less risk, and easier to scale up the usage
+                                                                    of the new system at a relaxed pace.</li>
+                                                                <li>Coordinating the migration is way easier, everyone can
+                                                                    migrate at their own pace.</li>
+                                                            </ol>
+                                                            <h6>Cons</h6>
+                                                            <ol>
+                                                                <li>No sense of urgency for consumers to migrate. As long as the
+                                                                    old system still works, most teams will not prioritize the
+                                                                    migration over other features.</li>
+                                                                <li>It is very difficult and costly to maintain 2 systems
+                                                                    side-by-side, plus a lot of context switching for the team
+                                                                    that is maintaining both instances.</li>
+                                                                <li>
+                                                                    The application has to be architected in a way in which the
+                                                            old and new can run side-by-side. This typically involves
+                                                            crazy database hacks, and threatens the stability of the new
+                                                            system.
+                                                                </li>
+                                                            </ol>
+                                                            <h5>Number 3 - Full Service</h5>
+                                                            This pattern (a.k.a. FS) is a new concept that may be
+                                                            gaining some steam.
+
+                                                            Basically the folks that built the system, go into the
+                                                            codebases of the consumers and migrate for them.
+                                                            <br/>
+                                                            <h6>Pros</h6>
+                                                            <ol>
+                                                                <li>Safe and low risk because the migration team actually
+                                                                    understands the API they are migrating to. (Pull requests
+                                                                    are reviewed by the SME's to avoid totally breaking the
+                                                                    other systems, plus testing in Test and Beta)</li>
+                                                                <li>
+                                                                    Coordinating the migration is in the hands of the API
+                                                            builders, this allows them to go live with as many teams as
+                                                            they think they can safely handle.
+                                                                </li>
+                                                                <li>
+                                                                    The migration is done by the team that literally knows the
+                                                            new API the best. There's no ambiguity about what different
+                                                            fields do, the SME's are the builders.
+                                                                </li>
+                                                                <li>
+                                                                    Timelines are no longer relevant, Quarterly Release Planning becomes less of a
+                                                            confusing information overload.
+                                                                </li>
+                                                            </ol>
+                                                            <h6>Cons</h6>
+                                                            <ol>
+                                                                <li>More work for the team that built the API</li>
+                                                            </ol>
+                                                            
+                                                            <h5>The Argument for Number 3 - Full Service</h5>
+                                                            I've seen a ton of timeline mismatch over the last couple of
+                                                            years. It's extremely difficult to keep a handle on where
+                                                            everyone in the enterprise is at.
+                                                            <br/>
+                                                            Here's an obligatory medium post about a form of the Full
+                                                            Service strategy that is being used at Google
+
+                                                            <a href="https://medium.freecodecamp.org/how-google-builds-a-web-framework-5eeddd691dea">https://medium.freecodecamp.org/how-google-builds-a-web-framework-5eeddd691dea</a>
+
+                                                            Here's a key paragraph:
+                                                            <br/>
+                                                            <br/>
+                                                            <i>You break it, you fix it
+                                                            When AngularDart authors want to introduce a breaking
+                                                            change, they have to go and fix it for their users.
+                                                            Since everything at Google lives in a single repo, it’s
+                                                            trivial to find out whom they’re breaking, and they can
+                                                            start fixing right away.
+                                                            Any breaking change to AngularDart also includes all the
+                                                            fixes to that change in all the Google apps that depend on
+                                                            it.
+                                                            So the breakage and the fix go into the repo simultaneously
+                                                            and — of course — after proper code review by all affected
+                                                            parties.
+                                                            Let’s give a concrete example. When someone from the
+                                                            AngularDart team makes a change that affects code in the
+                                                            AdWords app, they go to that app’s source code and fix it.
+                                                            They can run AdWords’ existing tests in the process, and
+                                                            they can add new ones. Then, they put all of that into their
+                                                            change list and ask for review.
+                                                            Since their change list touches code in both the AngularDart
+                                                            repo and the AdWords repo, the system automatically requires
+                                                            code review approval from both of those teams. Only then can
+                                                            the change be submitted.</i>
+                                                            <br />
+                                                            <br/>
+                                                            For the most part, all code lives in github or
+                                                            some easily accessible location. We have engineers, that can
+                                                            write code, just waiting for teams to migrate to their API,
+                                                            why can't they just do the migration themselves?
+
+                                                            This will really help us adapt a more open source mindset,
+                                                            and allow teams to focus on what they do best.
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%" cellspacing="0" cellpadding="1">
+                        <tr>
+                            <td bgcolor="#ff6600"></td>
+                        </tr>
+                    </table><br>
+                    <center><span class="yclinks"><a href="https://github.com/moshekarmel1">Github</a>
+                            | <a href="http://moshekarmelprogramming.blogspot.com/">Blog</a>
+                            | <a href="https://www.linkedin.com/in/moshe-karmel-3283a870">LinkedIn</a>
+                            | <a href="https://stackoverflow.com/users/4138452/moshe-karmel">StackExchange</a>
+                            | <a href="mailto:moshekarmel1@gmail.com">Contact</a></span><br><br>
+                    </center>
+                    <center>
+                        <span class="yclinks">This site design was <b>heavily</b> inspired by <a
+                                href="https://news.ycombinator.com/news" class="hnuser">Hacker News</a>.
+                            Minimalist++</span>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+<script type="text/javascript" src="pizza.js"></script>
+
+</html>
