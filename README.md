@@ -1,2 +1,2 @@
 # NodeSite
-My website + the MEAN stack
+My website, HN look-and-feel, Netlify + Namecheap
