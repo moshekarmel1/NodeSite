@@ -1,27 +1,29 @@
-body  { font-family:Verdana, Geneva, sans-serif; font-size:20pt; color:#828282; }
-td    { font-family:Verdana, Geneva, sans-serif; font-size:20pt; color:#828282; }
+body  { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; }
+td    { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; }
 
-.admin td   { font-family:Verdana, Geneva, sans-serif; font-size:17pt; color:#000000; }
-.subtext td { font-family:Verdana, Geneva, sans-serif; font-size:  14pt; color:#828282; }
+.admin td   { font-family:Verdana, Geneva, sans-serif; font-size:8.5pt; color:#000000; }
+.subtext td { font-family:Verdana, Geneva, sans-serif; font-size:  7pt; color:#828282; }
 
-input    { font-family:monospace; font-size:20pt; }
+input    { font-family:monospace; font-size:10pt; }
 input[type=\"submit\"] { font-family:Verdana, Geneva, sans-serif; }
-textarea { font-family:monospace; font-size:20pt; }
+textarea { font-family:monospace; font-size:10pt; resize:both; }
 
 a:link    { color:#000000; text-decoration:none; }
 a:visited { color:#828282; text-decoration:none; }
 
-.default { font-family:Verdana, Geneva, sans-serif; font-size: 20pt; color:#828282; }
-.admin   { font-family:Verdana, Geneva, sans-serif; font-size:17pt; color:#000000; }
-.title   { font-family:Verdana, Geneva, sans-serif; font-size: 20pt; color:#828282; overflow:hidden; }
-.subtext { font-family:Verdana, Geneva, sans-serif; font-size:  14pt; color:#828282; }
-.yclinks { font-family:Verdana, Geneva, sans-serif; font-size:  16pt; color:#828282; }
-.pagetop { font-family:Verdana, Geneva, sans-serif; font-size: 20pt; color:#222222; line-height:12px; }
-.comhead { font-family:Verdana, Geneva, sans-serif; font-size:  16pt; color:#828282; }
-.comment { font-family:Verdana, Geneva, sans-serif; font-size:  18pt; }
+.default { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:#828282; }
+.admin   { font-family:Verdana, Geneva, sans-serif; font-size:8.5pt; color:#000000; }
+.title   { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:#828282; overflow:hidden; }
+.subtext { font-family:Verdana, Geneva, sans-serif; font-size:  7pt; color:#828282; }
+.yclinks { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
+.pagetop { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:#222222; line-height:12px; }
+.comhead { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
+.comment { font-family:Verdana, Geneva, sans-serif; font-size:  9pt; }
 .hnname  { margin-right: 5px; }
 
 #hnmain { min-width: 796px; }
+
+.title a { word-break: break-word; }
 
 .comment a:link, .comment a:visited { text-decoration: underline; }
 .noshow { display: none; }
@@ -54,7 +56,7 @@ a:visited { color:#828282; text-decoration:none; }
 
 .pagebreak {page-break-before:always}
 
-pre { overflow: auto; padding: 2px; white-space: pre-wrap; word-wrap: break-word; }
+pre { overflow: auto; padding: 2px; white-space: pre-wrap; overflow-wrap:anywhere; }
 pre:hover { overflow:auto }
 
 .votearrow {
@@ -99,27 +101,27 @@ and (max-width : 750px) {
   span.pagetop b { display: block; font-size: 15px; }
   table.comment-tree .comment a { display: inline-block; max-width: 200px; overflow: hidden; white-space: nowrap;
     text-overflow: ellipsis; vertical-align:top; }
-  img[src='s.gif'][width='40'] { width: 12px; }
-  img[src='s.gif'][width='80'] { width: 24px; }
-  img[src='s.gif'][width='120'] { width: 36px; }
-  img[src='s.gif'][width='160'] { width: 48px; }
-  img[src='s.gif'][width='200'] { width: 60px; }
-  img[src='s.gif'][width='240'] { width: 72px; }
-  img[src='s.gif'][width='280'] { width: 84px; }
-  img[src='s.gif'][width='320'] { width: 96px; }
-  img[src='s.gif'][width='360'] { width: 108px; }
-  img[src='s.gif'][width='400'] { width: 120px; }
-  img[src='s.gif'][width='440'] { width: 132px; }
-  img[src='s.gif'][width='480'] { width: 144px; }
-  img[src='s.gif'][width='520'] { width: 156px; }
-  img[src='s.gif'][width='560'] { width: 168px; }
-  img[src='s.gif'][width='600'] { width: 180px; }
-  img[src='s.gif'][width='640'] { width: 192px; }
-  img[src='s.gif'][width='680'] { width: 204px; }
-  img[src='s.gif'][width='720'] { width: 216px; }
-  img[src='s.gif'][width='760'] { width: 228px; }
-  img[src='s.gif'][width='800'] { width: 240px; }
-  img[src='s.gif'][width='840'] { width: 252px; }
+  img[src='img/s.gif'][width='40'] { width: 12px; }
+  img[src='img/s.gif'][width='80'] { width: 24px; }
+  img[src='img/s.gif'][width='120'] { width: 36px; }
+  img[src='img/s.gif'][width='160'] { width: 48px; }
+  img[src='img/s.gif'][width='200'] { width: 60px; }
+  img[src='img/s.gif'][width='240'] { width: 72px; }
+  img[src='img/s.gif'][width='280'] { width: 84px; }
+  img[src='img/s.gif'][width='320'] { width: 96px; }
+  img[src='img/s.gif'][width='360'] { width: 108px; }
+  img[src='img/s.gif'][width='400'] { width: 120px; }
+  img[src='img/s.gif'][width='440'] { width: 132px; }
+  img[src='img/s.gif'][width='480'] { width: 144px; }
+  img[src='img/s.gif'][width='520'] { width: 156px; }
+  img[src='img/s.gif'][width='560'] { width: 168px; }
+  img[src='img/s.gif'][width='600'] { width: 180px; }
+  img[src='img/s.gif'][width='640'] { width: 192px; }
+  img[src='img/s.gif'][width='680'] { width: 204px; }
+  img[src='img/s.gif'][width='720'] { width: 216px; }
+  img[src='img/s.gif'][width='760'] { width: 228px; }
+  img[src='img/s.gif'][width='800'] { width: 240px; }
+  img[src='img/s.gif'][width='840'] { width: 252px; }
   .title { font-size: 11pt; line-height: 14pt;  }
   .subtext { font-size: 9pt; }
   .itemlist { padding-right: 5px;}
@@ -136,44 +138,47 @@ and (max-width : 750px) {
   input[type='text'], input[type='number'], textarea { font-size: 16px; width: 90%; }
 }
 
-.comment { max-width: 1215px; overflow: hidden }
+.comment { max-width: 1215px; overflow-wrap:anywhere; }
+
+.img { width: 250px;}
 
 @media only screen and (min-width : 300px) and (max-width : 389px) {
   .comment { max-width: 270px; overflow: hidden }
-  .comment { font-family:Verdana, Geneva, sans-serif; font-size:  9pt; }
-  .img { max-width: 100px;}
-  .comhead { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
-  .yclinks { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
+  .img { width: 75px;}
 }
 @media only screen and (min-width : 390px) and (max-width : 509px) {
   .comment { max-width: 350px; overflow: hidden }
-  .comment { font-family:Verdana, Geneva, sans-serif; font-size:  9pt; }
-  .img { max-width: 150px;}
-  .comhead { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
-  .yclinks { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
+  .img { width: 105px;}
 }
 @media only screen and (min-width : 510px) and (max-width : 599px) {
   .comment { max-width: 460px; overflow: hidden }
-  .img { max-width: 200px;}
+  .img { width: 150px;}
 }
 @media only screen and (min-width : 600px) and (max-width : 689px) {
   .comment { max-width: 540px; overflow: hidden }
+  .img { width: 250px;}
 }
 @media only screen and (min-width : 690px) and (max-width : 809px) {
   .comment { max-width: 620px; overflow: hidden }
+  .img { width: 250px;}
 }
 @media only screen and (min-width : 810px) and (max-width : 899px) {
   .comment { max-width: 730px; overflow: hidden }
+  .img { width: 250px;}
 }
 @media only screen and (min-width : 900px) and (max-width : 1079px) {
   .comment { max-width: 810px; overflow: hidden }
+  .img { width: 250px;}
 }
 @media only screen and (min-width : 1080px) and (max-width : 1169px) {
   .comment { max-width: 970px; overflow: hidden }
+  .img { width: 250px;}
 }
 @media only screen and (min-width : 1170px) and (max-width : 1259px) {
   .comment { max-width: 1050px; overflow: hidden }
+  .img { width: 250px;}
 }
 @media only screen and (min-width : 1260px) and (max-width : 1349px) {
   .comment { max-width: 1130px; overflow: hidden }
+  .img { width: 250px;}
 }
