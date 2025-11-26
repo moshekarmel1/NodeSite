@@ -1,4 +1,72 @@
-body  { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; }
+body  { 
+    font-family:Verdana, Geneva, sans-serif; 
+    font-size:10pt; 
+    color:#828282; 
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6ef;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 85%;
+    min-width: 796px;
+    background-color: #f6f6ef;
+}
+
+.header {
+    background-color: #ff6600;
+    padding: 2px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left {
+    width: 18px;
+    padding-right: 4px;
+}
+
+.header-center {
+    line-height: 24pt;
+    height: 20px;
+    flex-grow: 1;
+}
+
+.header-right {
+    padding-right: 4px;
+}
+
+.spacer {
+    height: 20px;
+}
+
+.main-content {
+    background-color: #f6f6ef;
+}
+
+.footer {
+    background-color: #f6f6ef;
+    padding: 10px 0;
+}
+
+.footer-divider {
+    background-color: #ff6600;
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+/* Table content within modern layout */
+.main-content table {
+    width: 100%;
+}
+
+.itemlist {
+    background-color: #f6f6ef;
+}
+
 td    { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; }
 
 .admin td   { font-family:Verdana, Geneva, sans-serif; font-size:8.5pt; color:#000000; }
